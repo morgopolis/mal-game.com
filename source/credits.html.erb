@@ -1,0 +1,97 @@
+---
+title: Credits - Magicians &amp; Looters
+---
+
+<div class="head">
+  <div class="head-credits"></div>
+</div>
+
+<div id="credits-container">
+  <div class="about-kol"></div>
+
+  <div>
+    <h1>Magicians and Looters</h1>
+    <div>Copyright (c) <%= config[:copyright_years] %> <%= config[:business_name_full] %>.</div>
+    <div>All rights reserved.</div>
+  </div>
+
+  <div>
+    <h2>Justin Pereira</h2>
+    <div>
+      <div>Artwork</div>
+      <div>Writing</div>
+      <div>Level design</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Brian Clifton</h2>
+    <div>
+      <div>Programming</div>
+      <div>Tools programming</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Ryan Peschman</h2>
+    <div>
+      <div>Music, sound, voice "acting"</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Dan Horne</h2>
+    <div>
+      <div>Music and sound</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Dan Peschman</h2>
+    <div>
+      <div>Programming</div>
+      <div>Boss programming</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Bradley Macomber</h2>
+    <div>
+      <div>Additional programming</div>
+    </div>
+  </div>
+
+  <div class="about-jocko"></div>
+  {{#each credit in model.credits}}
+  <div>
+    {{#each line in credit}}
+    {{{line}}}<br/>
+    {{/each}}
+  </div>
+  {{/each}}
+
+  <div class="about-looting"></div>
+  <div>
+    <div>Special thanks to our playtesters and bug reporters:</div>
+    <ul>
+      {{#each tester in model.testers}}
+      <li><i>{{tester}}</i></li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div>
+    <div>Website hosting by GoDaddy</div>
+    <div><a href="http://godaddy.com">http://godaddy.com</a></div>
+  </div>
+
+  <div>
+    <div>Code written using Microsoft Visual C# 2010 Express</div>
+    <div><a href="http://www.microsoft.com/visualstudio">http://www.microsoft.com/visualstudio</a></div>
+  </div>
+
+  <div>
+    <div>Compression performed using zlib</div>
+    <div><a href="http://zlib.net">http://zlib.net</a></div>
+  </div>
+</div>

@@ -1,0 +1,144 @@
+/******************************************************
+    __  ___                                   ___
+   /  |/  ____  _________ _____  ____  ____  / (______
+  / /|_/ / __ \/ ___/ __ `/ __ \/ __ \/ __ \/ / / ___/
+ / /  / / /_/ / /  / /_/ / /_/ / /_/ / /_/ / / (__  )
+/_/  /_/\____/_/   \__, /\____/ .___/\____/_/_/____/
+                  /____/     /_/
+   _____ __            ___
+  / ___// /___  ______/ (_____  _____
+  \__ \/ __/ / / / __  / / __ \/ ___/
+ ___/ / /_/ /_/ / /_/ / / /_/ (__  )
+/____/\__/\__,_/\__,_/_/\____/____/
+
+******************************************************/
+html        { height: 100%; }
+body        { height: 100%; background: #eec864; color: #000000; text-align: center; margin: 0; }
+body > div  { height: 100%; }
+ul          { list-style-type: none; margin: 0; padding: 0; }
+div.loading { display: inline-block; background-image: url(/images/ajax-loader.gif); width: 32px; height: 32px; margin-top: 50px; }
+.twitter    { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -825px  -1px; width: 48px; height: 48px; }
+.facebook   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -825px -51px; width: 48px; height: 48px; }
+.email      { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -875px -51px; width: 48px; height: 48px; }
+.google     { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -925px  -1px; width: 48px; height: 48px; }
+.indiedb    { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -925px -51px; width: 48px; height: 48px; }
+.steam      { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -975px  -1px; width: 48px; height: 48px; }
+.reddit     { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -875px  -1px; width: 48px; height: 48px; }
+.none       { display: none; }
+/*header**********************************************/
+.head         { display: block; text-align: center; padding-top: 20px;}
+.head-press   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -374px; width: 221px; height: 65px; }
+.head-forum   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -439px; width: 265px; height: 65px; }
+.head-games   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -505px; width: 252px; height: 65px; }
+.head-music   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -572px; width: 229px; height: 65px; }
+.head-credits { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -639px; width: 307px; height: 65px; }
+.head-contact { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px  -705px; width: 350px; height: 65px; }
+/*footer**********************************************/
+div.application { min-height:100%; position:relative; }
+section#outlet { /*padding-bottom:94px;*/ }
+/*footer { position:absolute; bottom:0; width:100%; background-color: #0e696e; border-top: 9px solid #fff; height:94px; }*/
+footer { width:100%; background-color: #0e696e; border-bottom: 9px solid #fff; height:94px; }
+footer > div#griffon {
+    /*dammit- issue on mobile*/
+    display: none;
+    background-image: url(/images/2014-03-25.png);
+    background-position: -894px -100px;
+    width: 130px;
+    height: 122px;
+}
+footer > a                { display: inline-block; margin-top: 17px; margin-right: 50px; }
+a#footer-title-image      { vertical-align: top; }
+div.title-image           { background-image: url(/images/2014-03-25.png); background-position: -308px -969px; width: 154px; height: 55px; cursor: pointer; }
+div.title-image:hover     { background-image: url(/images/2014-03-25.png); background-position: -154px -969px; width: 154px; height: 55px; cursor: pointer; }
+a.active div.title-image  { background-image: url(/images/2014-03-25.png); background-position:    0px -969px; width: 154px; height: 55px; }
+nav                       { vertical-align: top; }
+nav,
+nav ul,
+nav ul > li               { margin: 0; padding: 0; display: inline-block; }
+nav ul > li               { margin: 0 15px 0 0; vertical-align: top; }
+nav ul > li > a           { cursor: pointer !important; }
+nav ul .press             { display:block; background-image: url(/images/2014-03-25.png); background-position: -830px -999px; width:  83px; height: 25px; margin-top: 36px; }
+nav ul .press:hover       { display:block; background-image: url(/images/2014-03-25.png); background-position: -830px -974px; width:  83px; height: 25px; }
+nav ul li.active .press   { display:block; background-image: url(/images/2014-03-25.png); background-position: -830px -949px; width:  83px; height: 25px; }
+nav ul .music             { display:block; background-image: url(/images/2014-03-25.png); background-position: -553px -999px; width:  75px; height: 25px; margin-top: 36px; }
+nav ul .music:hover       { display:block; background-image: url(/images/2014-03-25.png); background-position: -553px -974px; width:  75px; height: 25px; }
+nav ul li.active .music   { display:block; background-image: url(/images/2014-03-25.png); background-position: -553px -949px; width:  75px; height: 25px; }
+nav ul .forum             { display:block; background-image: url(/images/2014-03-25.png); background-position: -634px -999px; width:  80px; height: 25px; margin-top: 36px; }
+nav ul .forum:hover       { display:block; background-image: url(/images/2014-03-25.png); background-position: -634px -974px; width:  80px; height: 25px; }
+nav ul li.active .forum   { display:block; background-image: url(/images/2014-03-25.png); background-position: -634px -949px; width:  80px; height: 25px; }
+nav ul .credits           { display:block; background-image: url(/images/2014-03-25.png); background-position: -918px -999px; width: 106px; height: 25px; margin-top: 36px; }
+nav ul .credits:hover     { display:block; background-image: url(/images/2014-03-25.png); background-position: -918px -974px; width: 106px; height: 25px; }
+nav ul li.active .credits { display:block; background-image: url(/images/2014-03-25.png); background-position: -918px -949px; width: 106px; height: 25px; }
+nav ul .contact           { display:block; background-image: url(/images/2014-03-25.png); background-position: -721px -999px; width: 105px; height: 25px; margin-top: 36px; }
+nav ul .contact:hover     { display:block; background-image: url(/images/2014-03-25.png); background-position: -721px -974px; width: 105px; height: 25px; }
+nav ul li.active .contact { display:block; background-image: url(/images/2014-03-25.png); background-position: -721px -949px; width: 105px; height: 25px; }
+nav ul > li > a.twitter,
+nav ul > li > a.facebook,
+nav ul > li > a.reddit { margin-top:28px; }
+#copyright {
+  margin-top: 10px;
+  font-weight: bold;
+}
+/*home************************************************/
+#mal-logo {
+    background-image: url(/images/2014-03-16.png);
+    background-position: -310px -374px;
+    width: 455px;
+    height: 173px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#morg-minion { display: inline-block; background-image: url(/images/MinionSprite_Animated.gif); width: 53px; height: 80px;  margin-left: 25px; vertical-align: bottom; }
+.mal-container #steam,
+.mal-container #video { margin: 10px; }
+.mal-container #other #title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18pt;
+}
+.mal-container #other .button { margin-top: 5px; }
+/*press***********************************************/
+a.review { display:inline-block; border: 1px solid black; margin:5px; padding:15px; }
+/*music***********************************************/
+#music-container { margin-top: 40px; margin-bottom: 40px; }
+#music-track-list { text-align: left; display: inline-block; margin-top: 40px; }
+iframe#bandcamp { border:0; padding:0; margin:0; width:350px; height: 512px; }
+/*contact*********************************************/
+#contact-container       { margin-top: 35px; /*margin-top: 110px; margin-bottom: 110px;*/ display: inline-block; }
+.contact-block           { display: inline-block; margin-bottom: 40px; /*ie7 hack for inline-block*/ zoom:1; *display: inline; _height: 30px; }
+.contact-info-container  { display: inline-block; vertical-align: top; width: 120px; }
+.contact-types           { text-align: left; margin-left: 5px; margin-top: 30px; }
+.contact-types a         { cursor: pointer; }
+.contact-clifton-name    { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -259px   -1px; width: 127px; height: 60px; position: relative; left: -55px; top: 25px; }
+.contact-clifton         { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -156px  -62px; width: 156px; height: 156px; }
+.contact-clifton:hover   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -624px -218px; width: 156px; height: 156px; }
+.contact-pereira-name    { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -388px   -1px; width: 127px; height: 60px; position: relative; left: -55px; top: 25px; }
+.contact-pereira         { display: inline-block; background-image: url(/images/2014-03-25.png); background-position:    0px -218px; width: 156px; height: 156px; }
+.contact-pereira:hover   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -468px  -62px; width: 156px; height: 156px; }
+.contact-dpeschman-name  { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -517px   -1px; width: 127px; height: 60px; position: relative; left: -55px; top: 25px; }
+.contact-dpeschman       { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -312px  -62px; width: 156px; height: 156px; }
+.contact-dpeschman:hover { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -312px -218px; width: 156px; height: 156px; }
+.contact-rpeschman-name  { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -130px   -1px; width: 127px; height: 60px; position: relative; left: -55px; top: 25px; }
+.contact-rpeschman       { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -156px -218px; width: 156px; height: 156px; }
+.contact-rpeschman:hover { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -624px  -62px; width: 156px; height: 156px; }
+.contact-horne-name      { display: inline-block; background-image: url(/images/2014-03-25.png); background-position:   -1px   -1px; width: 127px; height: 60px; position: relative; left: -55px; top: 25px; }
+.contact-horne           { display: inline-block; background-image: url(/images/2014-03-25.png); background-position:    0px  -62px; width: 156px; height: 156px; }
+.contact-horne:hover     { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -468px -218px; width: 156px; height: 156px; }
+/*credits*********************************************/
+.about-kol     { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -896px -222px; width: 128px; height: 236px; }
+.about-jocko   { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -794px -458px; width: 230px; height: 226px; }
+.about-looting { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: -772px -684px; width: 252px; height: 250px; }
+#credits-container > div { margin-top: 20px; }
+/*unsorted********************************************/
+.mal-container {
+    background-color:#d0d8a7;
+    border: 9px solid #fff;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    margin: 0 15px;
+    display: inline-block;
+}
+#steam-greenlight { display: inline-block; background-image: url(/images/2014-03-25.png); background-position: 0px -374px; width: 310px; height:50px; }

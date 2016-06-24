@@ -1,0 +1,27 @@
+---
+title: Press - Magicians &amp; Looters
+---
+
+<div class="head">
+  <div class="head-press"></div>
+</div>
+
+<div class="mal-container">
+  <h2>Reviews</h2>
+  <div>
+    {{#each review in model.reviews}}
+    <a {{bind-attr href=review.url title=review.title}} rel="nofollow" class="review">
+      <div style='font-size:4em;white-space:nowrap'>{{review.score}}</div>
+      <div style='font-size:2em'>{{review.author}}</div>
+      <div>{{review.site}}</div>
+    </a>
+    {{/each}}
+  </div>
+
+  <h2>Mentions</h2>
+  <ul>
+    {{#each mention in model.mentions}}
+    <li><a {{bind-attr href=mention.url title=mention.title}} rel="nofollow">{{mention.site}} - {{mention.author}}</a></li>
+    {{/each}}
+  </ul>
+</div>
