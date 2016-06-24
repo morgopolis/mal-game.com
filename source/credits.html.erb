@@ -74,9 +74,9 @@ title: Credits - Magicians &amp; Looters
   <div>
     <div>Special thanks to our playtesters and bug reporters:</div>
     <ul>
-      {{#each tester in model.testers}}
-      <li><i>{{tester}}</i></li>
-      {{/each}}
+      <% config[:testers].each do |tester| %>
+        <li><i><%= tester %></i></li>
+      <% end %>
     </ul>
   </div>
 

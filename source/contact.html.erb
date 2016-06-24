@@ -7,18 +7,20 @@ title: Contact - Magicians &amp; Looters
 </div>
 
 <div id="contact-container">
-{{#each dev in model}}
+<% config[:devs].each do |dev| %>
   <div class="contact-block">
-    {{#with dev}}
-    <div class="contact-{{unbound name}}"></div>
+    <div class="contact-<%= dev[:name] %>"></div>
     <div class="contact-info-container">
-      <div class="contact-{{unbound name}}-name"></div>
+      <div class="contact-<%= dev[:name] %>-name"></div>
       <div class="contact-types">
-      {{#if type1}}<a {{bind-attr class=type1 title=type1}} {{action "clickContactIcon" dev type1 url1}}></a>{{/if}}
-      {{#if type2}}<a {{bind-attr class=type2 title=type2}} {{action "clickContactIcon" dev type2 url2}}></a>{{/if}}
+        <% if dev[:type1] %>
+          <a class="<%= dev[:type1] %>" title="<%= dev[:type1] %>" href="<%= dev[:url1] %>" target="_blank"></a>
+        <% end %>
+        <% if dev[:type2] %>
+          <a class="<%= dev[:type2] %>" title="<%= dev[:type2] %>" href="<%= dev[:url2] %>" target="_blank"></a>
+        <% end %>
       </div>
     </div>
-    {{/with}}
   </div>
-{{/each}}
+<% end %>
 </div>

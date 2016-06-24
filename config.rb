@@ -44,6 +44,13 @@ set :testers, [
   'Trevor Pereira',
   'Nate Warner'
 ]
+set :devs, [
+  { :name => 'clifton', :type1 => 'twitter', :url1 => 'https://twitter.com/MorgCityCoder', :type2 => 'email', :url2 => 'mailto:brian@morgopolis.com' },
+  { :name => 'pereira', :type1 => 'twitter', :url1 => 'https://twitter.com/LowBitLovecraft', :type2 => 'email', :url2 => 'mailto:justin@morgopolis.com' },
+  { :name => 'dpeschman', :type1 => 'email', :url1 => 'mailto:dan@morgopolis.com' },
+  { :name => 'rpeschman', :type1 => 'email', :url1 => 'mailto:ryan@morgopolis.com' },
+  { :name => 'horne', :type1 => 'twitter', :url1 => 'https://twitter.com/Dan_Horne', :type2 => 'email', :url2 => 'mailto:horne@morgopolis.com' }
+]
 
 # Reload the browser automatically whenever files change
 configure :development do
