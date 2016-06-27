@@ -104,7 +104,7 @@ a.review { display:inline-block; border: 1px solid black; margin:5px; padding:15
 /*music***********************************************/
 #music-container { margin-top: 40px; margin-bottom: 40px; }
 #music-track-list { text-align: left; display: inline-block; margin-top: 40px; }
-iframe#bandcamp { border:0; padding:0; margin:0; width:350px; height: 512px; }
+iframe#bandcamp { border:0; padding:0; margin:0; width:100%; height: 1000px; }
 /*contact*********************************************/
 #contact-container       { margin-top: 35px; /*margin-top: 110px; margin-bottom: 110px;*/ display: inline-block; }
 .contact-block           { display: inline-block; margin-bottom: 40px; /*ie7 hack for inline-block*/ zoom:1; *display: inline; _height: 30px; }

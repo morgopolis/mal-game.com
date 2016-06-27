@@ -7,3 +7,15 @@ title: Music - Magicians &amp; Looters
 
 <div class="loading" style="display:none"></div>
 <iframe id="bandcamp" style="display:none"></iframe>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('div.loading').show();
+    $('iframe#bandcamp')
+      .load(function () {
+        $('div.loading').hide();
+        $('iframe#bandcamp').show();
+      })
+      .attr('src', "<%= config[:url_bandcamp] %>");
+  });
+</script>

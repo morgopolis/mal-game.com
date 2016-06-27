@@ -62,13 +62,13 @@ title: Credits - Magicians &amp; Looters
   </div>
 
   <div class="about-jocko"></div>
-  {{#each credit in model.credits}}
+  <% config[:credits].each do |credit| %>
   <div>
-    {{#each line in credit}}
-    {{{line}}}<br/>
-    {{/each}}
+    <% credit.each do |line| %>
+    <%= line %><br/>
+    <% end %>
   </div>
-  {{/each}}
+  <% end %>
 
   <div class="about-looting"></div>
   <div>

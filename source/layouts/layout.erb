@@ -31,6 +31,7 @@ Art / Design => Justin Pereira
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
+    <%= javascript_include_tag :"jquery-1.11.1.min" %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -52,9 +53,9 @@ Art / Design => Justin Pereira
           <li><%= link_to '', '/music.html', :class => "music" %></li>
           <li><%= link_to '', '/credits.html', :class => "credits" %></li>
           <li><%= link_to '', '/contact.html', :class => "contact" %></li>
-          <li><a href="<%= config[:url_reddit] %>" title="reddit" class="reddit" title="Visit our subreddit"></a></li>
-          <li><a href="<%= config[:url_twitter] %>" title="twitter" class="twitter" title="Send us a tweet"></a></li>
-          <li><a href="<%= config[:url_facebook] %>" title="facebook" class="facebook" title="Like us on Facebook"></a></li>
+          <li><a href="<%= config[:url_reddit] %>" class="reddit" title="Visit our subreddit" target="_blank" rel="noopener"></a></li>
+          <li><a href="<%= config[:url_twitter] %>" class="twitter" title="Send us a tweet" target="_blank" rel="noopener"></a></li>
+          <li><a href="<%= config[:url_facebook] %>" class="facebook" title="Like us on Facebook" target="_blank" rel="noopener"></a></li>
         </ul>
       </nav>
     </footer>
