@@ -20,10 +20,8 @@ page '/*.txt', layout: false
 set :copyright_years, "2002-#{Date.today.year.to_s}"
 set :business_name, 'Morgopolis Studios'
 set :business_name_full, 'Morgopolis Studios, LLC'
-set :url_bandcamp, 'http://morgopolisstudios.bandcamp.com/'
-set :url_reddit, 'http://www.reddit.com/r/morgopolis'
-set :url_facebook, 'http://www.facebook.com/pages/Magicians-and-Looters/242597565809642'
-set :url_twitter, 'http://www.twitter.com/Morgopolis'
+set :url_bandcamp, 'https://morgopolisstudios.bandcamp.com/'
+set :url_twitter, 'https://www.twitter.com/Morgopolis'
 set :analytics_token, 'UA-27922033-1'
 set :testers, [
   'Bill Basaraba',
