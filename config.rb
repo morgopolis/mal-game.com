@@ -81,11 +81,11 @@ set :credits, [
   ]
 ]
 set :devs, [
-  { :name => 'clifton', :type1 => 'twitter', :url1 => 'https://twitter.com/MorgCityCoder', :type2 => 'email', :url2 => 'mailto:brian@morgopolis.com' },
-  { :name => 'pereira', :type1 => 'twitter', :url1 => 'https://twitter.com/LowBitLovecraft', :type2 => 'email', :url2 => 'mailto:justin@morgopolis.com' },
-  { :name => 'dpeschman', :type1 => 'email', :url1 => 'mailto:dan@morgopolis.com' },
-  { :name => 'rpeschman', :type1 => 'email', :url1 => 'mailto:ryan@morgopolis.com' },
-  { :name => 'horne', :type1 => 'twitter', :url1 => 'https://twitter.com/Dan_Horne', :type2 => 'email', :url2 => 'mailto:horne@morgopolis.com' }
+  { :name => 'clifton', :type1 => 'twitter', :url1 => 'https://twitter.com/MorgCityCoder' },
+  { :name => 'pereira', :type1 => 'twitter', :url1 => 'https://twitter.com/LowBitLovecraft' },
+  { :name => 'dpeschman' },
+  { :name => 'rpeschman' },
+  { :name => 'horne', :type1 => 'twitter', :url1 => 'https://twitter.com/Dan_Horne' }
 ]
 set :reviews, [
   { :date => '2013-08-25', :author => 'Tim Hurley', :score => '#5 on leaderboard', :site => 'http://thexblig.com', :url => 'http://thexblig.com/2013/08/25/review-magicians-looters/', :title => 'REVIEW: Magicians & Looters' },
