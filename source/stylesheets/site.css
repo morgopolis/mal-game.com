@@ -100,7 +100,7 @@ nav ul > li > a.reddit { margin-top:28px; }
 }
 .mal-container #other .button { margin-top: 5px; }
 /*press***********************************************/
-a.review { display:inline-block; border: 1px solid black; margin:5px; padding:15px; }
+.review { display:inline-block; border: 1px solid black; margin:5px; padding:15px; }
 /*music***********************************************/
 #music-container { margin-top: 40px; margin-bottom: 40px; }
 #music-track-list { text-align: left; display: inline-block; margin-top: 40px; }

@@ -10,11 +10,19 @@ title: Press - Magicians &amp; Looters
   <h2>Reviews</h2>
   <div>
     <% config[:reviews].each do |review| %>
-    <a href="<%= review[:url] %>" title="<%= review[:title] %>" class="review" rel="nofollow noopener" target="_blank">
-      <div style='font-size:4em;white-space:nowrap'><%= review[:score] %></div>
-      <div style='font-size:2em'><%= review[:author] %></div>
-      <div><%= review[:site] %></div>
-    </a>
+      <% if review[:alive] %>
+        <a href="<%= review[:url] %>" title="<%= review[:title] %>" class="review" rel="nofollow noopener" target="_blank">
+      <% else %>
+        <div class="review">
+      <% end %>
+          <div style='font-size:4em;white-space:nowrap'><%= review[:score] %></div>
+          <div style='font-size:2em'><%= review[:author] %></div>
+          <div><%= review[:site] %></div>
+      <% if review[:alive] %>
+        </a>
+      <% else %>
+        </div>
+      <% end %>
     <% end %>
   </div>
 

@@ -18,6 +18,25 @@ bundle exec middleman server
 At this point, Middleman is running an HTTP server which is hosting the content (using a live-reload plugin, which auto-updates when files are modified).
 You can browse to it by navigating to `http://localhost:4567/`.
 
+### Mac build issues
+
+#### Outdated Mac command-line tools
+
+When `bundle install` says:
+
+```
+ld: multiple errors: tapi error: malformed file
+/Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk/usr/lib/libSystem.B.tbd:4:20: error: unknown architecture
+                   arm64e.x1-macos, arm64e.x1-maccatalyst ]
+                   ^~~~~~~~~~~~~~~
+```
+
+Try:
+
+```sh
+sudo xcode-select -s /Library/Developer/CommandLineTools
+```
+
 ## Building and deploying
 When the project is tested and ready to go, you can create the final HTML by running `bundle exec middleman build`.
 
